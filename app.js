@@ -13,7 +13,7 @@ const buttonHongKong = document.querySelector(".button-hong-kong");
 const buttonThess = document.querySelector(".button-thess");
 
 const KELVIN = 273;
-const key = "fc813afd7483be0fa0722faf738248ff";
+const key = "1f2a7bac836242d4c7a25e78ab990fa4";
 let data = new Date()
 
 //api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
