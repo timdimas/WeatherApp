@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="font/Rimouski.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="dropdown">
-      <button class="dropbtn">City</button>
-      <div class="dropdown-content">
-        <button class="button-grevena" type="button" value="Grevena">
-          Grevena
-        </button>
-        <button class="button-thess" type="button" value="Thessaloniki">
-          Thessaloniki
-        </button>
-        <button class="button-athens" type="button" value="Athens">
-          Athens
-        </button>
-        <button class="button-london" type="button" value="London">
-          London
-        </button>
-        <button class="button-new-york" type="button" value="New York">
-          New York
-        </button>
-        <button class="button-la" type="button" value="Los Angeles">
-          Los Angles
-        </button>
-        <button class="button-hong-kong" type="button" value="Hong Kong">
-          Hong Kong
-        </button>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="font/Rimouski.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+         crossorigin="anonymous"
+      />
+      <title>Document</title>
+   </head>
+   <body>
+      <video preload="auto" autoplay loop id="myVideo">
+         <source
+            id="video-source"
+            src="icons/Top View of a Road in the Forest.mp4"
+            type="video/mp4"
+         />
+      </video>
+      <audio title="Radio" id="radio">
+         <source
+            src="https://coderadio-relay-blr.freecodecamp.org/radio/8010/radio.mp3"
+            type="audio/mpeg"
+            title="Radio"
+         />
+      </audio>
+      <button id="videoBtn">Play</button>
+      <div class="radio-player-container">
+         <div class="radio-player">
+            <i class="fas fa-play"></i>
+            <div class="timer">0:00</div>
+            <span>Listen To Radio</span>
+            <i class="fas fa-volume-up"></i>
+         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="app-title"><p>Weather</p></div>
-      <div class="notification"></div>
-      <div class="weather-container">
-        <div class="weather-icon"><img src="icons/unknown.png" /></div>
-        <div class="temperature-value">
-          <p>- °<span>C</span></p>
-        </div>
-        <div class="temperature-description"><p>-</p></div>
-        <div class="location"><p>-</p></div>
-        <div class="current-time"><p>-</p></div>
+      <div class="dropdown">
+         <button class="dropbtn">City</button>
+         <div class="dropdown-content">
+            <button class="button-grevena btn" type="button" value="Grevena">
+               Grevena
+            </button>
+            <button class="button-thess btn" type="button" value="Thessaloniki">
+               Thessaloniki
+            </button>
+            <button class="button-athens btn" type="button" value="Athens">
+               Athens
+            </button>
+            <button class="button-london btn" type="button" value="London">
+               London
+            </button>
+            <button class="button-new-york btn" type="button" value="New York">
+               New York
+            </button>
+            <button class="button-la btn" type="button" value="Los Angeles">
+               Los Angles
+            </button>
+            <button
+               class="button-hong-kong btn"
+               type="button"
+               value="Hong Kong"
+            >
+               Hong Kong
+            </button>
+         </div>
       </div>
-    </div>
-    <script src="app.js"></script>
-  </body>
+      <div class="container">
+         <div class="app-title"><p>Weather</p></div>
+         <div class="notification"></div>
+         <div class="weather-container">
+            <div class="weather-icon"><img src="icons/unknown.png" /></div>
+            <div class="temperature-value">
+               <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description"><p>-</p></div>
+            <div class="location"><p>-</p></div>
+            <div class="current-time"><p>-</p></div>
+         </div>
+      </div>
+      <script src="app.js"></script>
+   </body>
 </html>

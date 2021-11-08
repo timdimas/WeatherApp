@@ -1,154 +1,298 @@
 * {
-  font-family: "Rimouski";
+   font-family: "Rimouski";
 }
 
 body {
-  background-color: #293251;
+   background-color: #293251;
 }
 
 .container {
-  width: 300px;
-  background-color: #fff;
+   width: 300px;
+   background-color: #fff;
 
-  display: block;
-  margin: 0 auto;
+   display: block;
+   margin: 0 auto;
 
-  border-radius: 10px;
-  padding-bottom: 50px;
+   border-radius: 10px;
+   padding-bottom: 50px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 .app-title {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px 10px 0 0;
+   width: 300px;
+   height: 50px;
+   border-radius: 10px 10px 0 0;
 }
 
 .app-title p {
-  text-align: center;
-  padding: 15px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  color: #293251;
+   text-align: center;
+   padding: 15px;
+   margin: 0 auto;
+   font-size: 1.2em;
+   color: #293251;
 }
 
 .notification {
-  background-color: #f8d7da;
-  display: none;
+   background-color: #f8d7da;
+   display: none;
 }
 
 .notification p {
-  color: #721c24;
-  font-size: 1.2em;
-  margin: 0;
-  text-align: center;
-  padding: 10px 0;
+   color: #721c24;
+   font-size: 1.2em;
+   margin: 0;
+   text-align: center;
+   padding: 10px 0;
 }
 
 .weather-container {
-  width: 300px;
-  height: 260px;
-  background-color: #f4f9ff;
+   width: 300px;
+   height: 260px;
+   background-color: #f4f9ff;
 }
 
 .weather-icon {
-  width: 300px;
-  height: 128px;
+   width: 300px;
+   height: 128px;
 }
 
 .weather-icon img {
-  display: block;
-  margin: 0 auto;
+   display: block;
+   margin: 0 auto;
 }
 
 .temperature-value {
-  width: 300px;
-  height: 60px;
+   width: 300px;
+   height: 60px;
 }
 
 .temperature-value p {
-  padding: 0;
-  margin: 0;
-  color: #293251;
-  font-size: 4em;
-  text-align: center;
-  cursor: pointer;
-}
-
-.temperature-value p:hover {
+   padding: 0;
+   margin: 0;
+   color: #293251;
+   font-size: 4em;
+   text-align: center;
+   cursor: pointer;
 }
 
 .temperature-value span {
-  color: #293251;
-  font-size: 0.5em;
-}
-
-.temperature-description {
+   color: #293251;
+   font-size: 0.5em;
 }
 
 .temperature-description p {
-  padding: 8px;
-  margin: 0;
-  color: #293251;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.location {
+   padding: 8px;
+   margin: 0;
+   color: #293251;
+   text-align: center;
+   font-size: 1.2em;
 }
 
 .location p {
-  margin: 0;
-  padding: 0;
-  color: #293251;
-  text-align: center;
-  font-size: 0.8em;
+   margin: 0;
+   padding: 0;
+   color: #293251;
+   text-align: center;
+   font-size: 0.8em;
 }
 .current-time p {
-  margin: 0;
-  padding: 6px;
-  color: #293251;
-  text-align: center;
-  font-size: 1rem;
+   margin: 0;
+   padding: 6px;
+   color: #293251;
+   text-align: center;
+   font-size: 1rem;
 }
 .dropbtn {
-  background-color: #18b15d;
-  color: white;
-  padding: 15px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+   background-color: #18b15d;
+   color: white;
+   padding: 15px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
 }
 .dropdown {
-  position: relative;
-  display: inline-block;
+   position: relative;
+   display: inline-block;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  padding: 1px;
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+   z-index: 1;
+   padding: 1px;
+   overflow: scroll;
+   max-height: 300px;
+   scroll-behavior: smooth;
+   transition: all 0.3s;
+}
+.dropdown-content::-webkit-scrollbar {
+   display: none;
 }
 .dropdown-content button {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  border-style: none;
-  margin: auto;
-  cursor: pointer;
+   color: rgb(0, 0, 0);
+   padding: 12px 16px;
+   text-decoration: none;
+   display: flex;
+   border-style: none;
+   margin: auto;
+   cursor: pointer;
 }
 .dropdown-content button:hover {
-  background-color: #ddd;
+   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+   display: block;
+   transition: all 0.3s;
 }
 .dropdown:hover .dropbtn {
-  background-color: #2f7731;
+   background-color: #2f7731;
+}
+#myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -1;
+   -webkit-filter: blur(10px);
+   -moz-filter: blur(10px);
+   -o-filter: blur(10px);
+   -ms-filter: blur(10px);
+   filter: blur(10px);
+   display: none;
+}
+#videoBtn {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   width: 200px;
+   font-size: 18px;
+   padding: 10px;
+   border: none;
+   background: rgb(37, 37, 37);
+   color: #fff;
+   border: 1px solid rgba(0, 0, 0, 0.041);
+   cursor: pointer;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+#videoBtn:hover {
+   background: #ddd;
+   color: black;
+   transition: all 0.3s;
+}
+#radio {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   outline: none;
+   border-radius: 0;
+}
+.radio-player {
+   position: fixed;
+   bottom: 0;
+   width: 400px;
+   height: 35px;
+   font-size: 16px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px;
+   border: none;
+   background-color: rgb(37, 37, 37);
+   color: #f1f3f4;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   box-shadow: 3px 0px 0px 1px rgba(0, 0, 0, 0.034);
+}
+.radio-player-container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@media screen and (max-width: 1100px) {
+   .radio-player {
+      left: 0;
+      width: 275px;
+   }
+   #video-btn {
+      display: none;
+   }
+}
+@media screen and (max-width: 490px) {
+   .radio-player {
+      width: 350px;
+      display: flex;
+   }
+   .container {
+      display: grid;
+      justify-content: center;
+   }
+   .dropbtn {
+      left: 0;
+      position: absolute;
+      margin-top: 390px;
+      margin-bottom: 2px;
+   }
+   .dropdown-content {
+      margin-top: 430px;
+      max-height: 210px;
+   }
+}
+@media screen and (max-width: 500px) {
+   #videoBtn {
+      display: none;
+   }
+}
+@media screen and (max-height: 600px) {
+   .dropdown-content {
+      max-height: 110px;
+   }
+}
+
+.radio-player span {
+   margin-top: 5px;
+}
+.radio-player .timer {
+   margin-top: 5px;
+}
+.fas {
+   margin-top: 5px;
+}
+.fa-play,
+.fa-pause {
+   margin-left: -15px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.fa-play:hover {
+   color: gray;
+}
+.fa-pause:hover {
+   color: gray;
+}
+.timer {
+   margin-left: -25px;
+}
+.fa-volume-up {
+   transition: all 0.3s;
+   cursor: pointer;
+   margin-right: -20px;
+}
+.fa-volume-up:hover {
+   color: gray;
+   transition: all 0.3s;
+}
+.volume-slider {
+   background-color: rgba(128, 128, 128, 0.13);
+   width: 50px;
+   min-height: 15px;
+   border-radius: 12px;
+   z-index: 34;
 }
